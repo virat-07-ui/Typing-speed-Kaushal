@@ -26,7 +26,14 @@
             <option value="neon">Neon</option>
             <option value="hacker">Hacker</option>
         </select>
+<label>Select Mode</label>
 
+<select id="gameMode">
+    <option value="classic">🏠 Classic</option>
+    <option value="falling">🌧️ Falling Words</option>
+    <option value="survival">❤️ Survival</option>
+    <option value="zombie">🧟 Zombie Defense</option>
+</select>
         <button id="startBtn">▶ Start Test</button>
 
     </div>
@@ -38,7 +45,7 @@
         <div id="sentenceBox">
             Press Start Test
         </div>
-
+<div id="gameArea"></div>
         <textarea
             id="typingInput"
             placeholder="Type here..."
@@ -121,4 +128,8 @@
 <script src="script.js"></script>
 
 </body>
+    <div id="splash">
+    <h1>⌨️ Typing Master Pro</h1>
+    <p>Developed by Kaushal</p>
+    </div>
     </html>
