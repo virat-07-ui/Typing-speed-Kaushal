@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>⌨️ Typing Master Pro</h1>
+        <p>Improve your typing speed and accuracy</p>
+    </header>
+
+    <div class="card">
+
+        <label>Your Name</label>
+        <input type="text" id="playerName" placeholder="Enter your name">
+
+        <label>Select Theme</label>
+        <select id="themeSelector">
+            <option value="dark">Dark</option>
+            <option value="neon">Neon</option>
+            <option value="hacker">Hacker</option>
+        </select>
+
+        <button id="startBtn">▶ Start Test</button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Sentence</h2>
+
+        <div id="sentenceBox">
+            Press Start Test
+        </div>
+
+        <textarea
+            id="typingInput"
+            placeholder="Type here..."
+            rows="5"
+        ></textarea>
+
+        <button id="submitBtn">✅ Submit</button>
+
+    </div>
+
+    <div class="card stats">
+
+        <h2>Results</h2>
+
+        <div class="stat-item">
+            ⚡ WPM:
+            <span id="wpm">0</span>
+        </div>
+
+        <div class="stat-item">
+            🎯 Accuracy:
+            <span id="accuracy">0%</span>
+        </div>
+
+        <div class="stat-item">
+            ⏱ Time:
+            <span id="timeTaken">0s</span>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🏆 High Score</h2>
+
+        <p id="highScore">
+            No Record Yet
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📊 Statistics</h2>
+
+        <p>Total Tests:
+            <span id="totalTests">0</span>
+        </p>
+
+        <p>Average WPM:
+            <span id="avgWpm">0</span>
+        </p>
+
+        <p>Best Accuracy:
+            <span id="bestAccuracy">0%</span>
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🏅 Leaderboard</h2>
+
+        <ol id="leaderboard">
+        </ol>
+
+    </div>
+
+    <div class="card">
+
+        <label>
+            <input type="checkbox" id="soundToggle" checked>
+            Enable Sounds
+        </label>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+    </html>
