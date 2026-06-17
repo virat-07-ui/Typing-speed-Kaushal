@@ -1,0 +1,176 @@
+/* =========================
+   TYPING MASTER PRO
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#121212;
+    color:white;
+    min-height:100vh;
+    padding:20px;
+    transition:0.3s;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+header h1{
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:0.8;
+}
+
+.card{
+    background:#1e1e1e;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+#startBtn{
+    background:#4CAF50;
+    color:white;
+}
+
+#submitBtn{
+    background:#2196F3;
+    color:white;
+}
+
+button:hover{
+    transform:scale(1.02);
+}
+
+#sentenceBox{
+    background:#2d2d2d;
+    padding:15px;
+    border-radius:10px;
+    line-height:1.6;
+    margin-bottom:15px;
+    min-height:80px;
+}
+
+.stats{
+    text-align:center;
+}
+
+.stat-item{
+    margin:12px 0;
+    font-size:18px;
+}
+
+#leaderboard{
+    padding-left:25px;
+}
+
+#leaderboard li{
+    margin:8px 0;
+}
+
+/* =========================
+   NEON THEME
+========================= */
+
+body.neon{
+    background:#080018;
+    color:#00ffff;
+}
+
+body.neon .card{
+    background:#12002a;
+    box-shadow:0 0 15px #00ffff;
+}
+
+body.neon #sentenceBox{
+    background:#1b0038;
+}
+
+/* =========================
+   HACKER THEME
+========================= */
+
+body.hacker{
+    background:black;
+    color:#00ff00;
+}
+
+body.hacker .card{
+    background:#001500;
+    border:1px solid #00ff00;
+}
+
+body.hacker #sentenceBox{
+    background:#002200;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:1.8rem;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    button{
+        padding:12px;
+    }
+
+    .stat-item{
+        font-size:16px;
+    }
+  }
